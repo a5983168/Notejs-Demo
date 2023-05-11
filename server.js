@@ -27,14 +27,14 @@ var server = http.createServer(function(request, response){
     response.write(`<!DOCTYPE html>
     <html lang="en">
     <head>
-        <link rel="stylesheet" href="/x">
+        <link rel="stylesheet" href="/xx">
     </head>
     <body>
         <h1>欢迎你</h1>
     </body>
     </html>`)
     response.end()
-  } else if(path === '/x'){
+  } else if(path === '/xx'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`body{color: red;}`)
